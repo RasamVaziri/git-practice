@@ -1,3 +1,6 @@
+#!/bin/sh
+# check txt files before commit
+
 for file in $(git diff --cached --name-only)
 do
     case "$file" in
